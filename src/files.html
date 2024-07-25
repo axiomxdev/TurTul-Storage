@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Files - TorTul Storage</title>
+
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="files.css">
+
+    <script defer src="js/AddFile.js"></script>
+    <script defer src="js/AddFolder.js"></script>
+    <script defer src="js/Format.js"></script>
+    <script defer src="js/GestionData.js"></script>
+    <script defer src="js/GestionTreeData.js"></script>
+    <script defer src="js/SearchFile.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="./home.html">Home</a>
+        <a href="./files.html">Files</a>
+        <a href="./login.html">Login</a>
+
+        <a style="float: right" href="https://github.com/axiomxdev">Source</a>
+        <a style="float: right" href="https://github.com/axiomxdev/TurTul-Storage/">Github</a>
+    </div>
+
+    <div class="content">
+        <div class="header">
+            <h1>Explorateur de fichiers - TorTul Storage</h1>
+        </div>
+        <div class="file-explorer">
+            <div class="search-container">
+                <button id="add-folder">Ajouter un dossier</button>
+                <button id="add-file">Upload un fichier</button>
+                <input type="file" id="upload-file" style="display: none;" multiple>
+                <input type="text" id="search" placeholder="Rechercher un fichier..." autocomplete="off" list="suggestions" name="suggestions">
+                <datalist id="suggestions"></datalist>
+            </div>
+            <div style="display: flex" id="file_path">
+                <div class="boxpath">Stockage ></div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Taille</th>
+                        <th>Date</th>
+                        <th>Chemin</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="file-list">
+                    <!-- Les fichiers seront chargés ici par JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

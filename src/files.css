@@ -1,0 +1,55 @@
+.file-explorer {
+    max-width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.file-explorer table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.file-explorer th, .file-explorer td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+.file-explorer th {
+    background-color: #333;
+    color: #fff;
+}
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.search-container input {
+    padding: 8px;
+    width: 80%;
+    max-width: 400px;
+}
+.search-container button {
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.file-icon, .folder-icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+.expand-text {
+    color: blue;
+    cursor: pointer;
+}
+.expand-text:hover {
+    color: darkblue;
+}
+.boxpath {
+    margin: 3px;
+    color: blue;
+    cursor: pointer;
+}
+.boxpath:hover {
+    color: darkblue;
+}
