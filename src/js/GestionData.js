@@ -77,7 +77,7 @@ async function Download(id) {
     window.location.href = messageUrl;
 }
 
-async function sendFileToWebhook(webhook, file) {
+async function sendFileToWebhook(file) {
     const formData = new FormData();
     formData.append('file', file);
 
