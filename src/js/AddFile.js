@@ -41,7 +41,7 @@ document.getElementById('upload-file').addEventListener('change', async function
         if (duplicate) {
             alert(`File or folder already exists. (${file.name})`);
         } else {
-            const webhookResponse = await sendFileToWebhook(webhook, file);
+            const webhookResponse = await sendFileToWebhook(file);
             console.log('webhook response:', webhookResponse);
 
             data_to_add.id = webhookResponse;
