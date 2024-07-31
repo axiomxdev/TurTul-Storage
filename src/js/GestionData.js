@@ -1,4 +1,5 @@
 let DATA = JSON.parse(localStorage.getItem('DATA')) || [];
+const webhook = localStorage.getItem('webhook');
 
 function loadfiledata(data, name) {
     const tableBody = document.getElementById('file-list');
@@ -31,7 +32,7 @@ function loadfiledata(data, name) {
                 <td>${file.s}</td>
                 <td>${file.d}</td>
                 <td>${file.p}</td>
-                <td class="expand-text" onclick='expandFolder(${JSON.stringify(file.data)},"${file.n}")'>Agrandir</td>
+                <td class="expand-text" onclick='expandFolder(${JSON.stringify(file.data)},"${file.n}")'>Agrandir le dossier</td>
             `;
         }
         tableBody.appendChild(row);
