@@ -47,6 +47,7 @@
                     const webhook = document.getElementById("webhook").value; 
 
                     if(await login(webhook)){
+                        localStorage.setItem('webhook',webhook)
                         window.location.href = './files';
                     } else {
                         document.getElementById("webhook").value = 'WEBHOOK INVALIDE'
